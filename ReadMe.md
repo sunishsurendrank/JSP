@@ -22,12 +22,12 @@ docker network create demo
 ## Step 3 :
 Download the webservice from dockerhub repo
 ```
-docker run -d -p "9090:9090" --network demo --name webservice sunishsurendrank/webservice
+docker run -d -p "9090:9090" --network demo --name webservice sunishsurendrank/webservice:v1
 ```
 ## Step 4 :
 Download the webserver from dockerhub repo
 ```
-docker run -d -p "8080:80" --network demo --name webserver sunishsurendrank/webserver
+docker run -d -p "8080:80" --network demo --name webserver sunishsurendrank/webserver:v1
 ```
 ## Step 5 :
 Open chrome ON the Moesif CORS plugin and run the below command
